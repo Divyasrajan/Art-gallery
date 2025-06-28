@@ -1,0 +1,42 @@
+<body>
+{% extends 'bas.html'%}
+{% block content%}
+
+{% load static %}
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/images/cat.jpeg'%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/images/monalis.jpeg'%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/images/wall.jpeg'%}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<hr>
+  <h4 class="text-center">About Us</h4>
+ <hr>                       
+ <h3>Welcome to ART GALLERY, a curated space where art meets soul.Nestled in the heart of [palarivattom/kochi],our gallery is dedicated to showcasing contemporary and traditional works that celebrate creativity, culture, and storytelling.Since our founding in [2025], we've been a platform for emerging and established artists alike  providing a space for visual dialogue through exhibitions, artist talks, and community events.From painting and sculpture to photography and digital installations, each piece we present is selected with care to inspire thought, emotion, and connection.At [Art gallery],we believe in the power of art to transform spaces and perspectives.Whether you're a seasoned collector or a first-time visitor,we invite you to explore, reflect, and engage.Come experience art that speaks and stay for the story behind it.</h3>
+ <hr>
+ <div class="container">
+ 
+ <div class="card" style="width: 18rem;">
+  <img src="{% static '/images/a1.jpeg'%}" alt="">
+  <div class="card-body">
+    <p class="card-text"></p>    
+  </div>
+</div>
+ </div>
+ 
+{%endblock%}

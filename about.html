@@ -1,0 +1,23 @@
+{% extends 'bas.html'%}
+{% load static %}
+{% block content%}
+<hr>
+<h4 class="text-center">About Us</h4>
+
+<hr>
+ <h3>Welcome to ART GALLERY, a curated space where art meets soul.Nestled in the heart of [palarivattom/kochi],our gallery is dedicated to showcasing contemporary and traditional works that celebrate creativity, culture, and storytelling.Since our founding in [2025], we've been a platform for emerging and established artists alike  providing a space for visual dialogue through exhibitions, artist talks, and community events.From painting and sculpture to photography and digital installations, each piece we present is selected with care to inspire thought, emotion, and connection.At [Art gallery],we believe in the power of art to transform spaces and perspectives.Whether you're a seasoned collector or a first-time visitor,we invite you to explore, reflect, and engage.Come experience art that speaks and stay for the story behind it.</h3>
+<hr>
+<div class="container">
+{% for a in about%}
+
+   
+   <div class="card" style="width: 18rem;">
+  <img src="{{a.aimage.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"></p>
+  </div>
+</div>
+
+{% endfor %}
+</div>
+{%endblock%}

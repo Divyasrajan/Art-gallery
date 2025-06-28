@@ -1,0 +1,24 @@
+{% extends 'bas.html'%}
+{% load static%}
+
+{% block content%}
+<hr>
+<h3>Download page</h3>
+
+<div class="container text-center">
+{% for d in download%}
+
+<div class="card text-center mx-3 my-3" style="width: 18rem; display:inline-block">
+  <img id="myimage" src="{{d.image.url}}" class="card-img-top" alt="Image">
+  <div class="card-body">
+    <h5 class="card-title">{{d.category}}</h5>
+    <button onclick="downloadImage()" class="btn btn-outline-warning">Download</button>
+    <h6>{{i.artist}}</h6>
+    <p class="card-text"></p>
+  </div>
+</div>
+<script src="{% static 'js/download.js' %}"></script>
+
+{%endfor%}
+</div>
+{%endblock%}

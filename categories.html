@@ -1,0 +1,14 @@
+{% extends 'bas.html'%}
+
+{% block content%}
+<h1 class="text-center">Categories page</h1>
+<hr>
+
+{% for i in cat%}
+
+<div class="mx-auto w-50  text-center p-3 my-2 border border-warning rounded">
+    <h1>{{i.category}}</h1>
+    <p>{{i.description}}</p>
+</div>
+{% endfor %}
+{%endblock%}
